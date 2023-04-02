@@ -28,6 +28,7 @@
     "semver": "5.5.0",
     "stream-to-string": "1.1.0",
     "test-listen": "1.1.0",
+    "universal-analytics": "^0.5.3",
     "vercel": "^28.18.3"
   },
   "devDependencies": {
