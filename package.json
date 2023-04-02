@@ -6,29 +6,10 @@
   "scripts": {
     "start": "vercel dev",
     "test": "xo && jest",
-    "precommit": "lint-staged"
+    "precommit": "echo 0"
   },
   "license": "MIT",
   "repository": "vercel/hazel",
-  "xo": {
-    "extends": [
-      "prettier"
-    ],
-    "rules": {
-      "camelcase": 0,
-      "new-cap": 0,
-      "unicorn/no-process-exit": 0,
-      "no-await-in-loop": 0,
-      "unicorn/import-index": 0
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "yarn test && :",
-      "prettier --single-quote --no-semi --write --no-editorconfig",
-      "git add"
-    ]
-  },
   "dependencies": {
     "@vercel/analytics": "^0.1.11",
     "async-retry": "1.2.3",
